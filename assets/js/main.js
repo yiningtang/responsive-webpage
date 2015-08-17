@@ -84,7 +84,7 @@ $(document).ready(function(){
 var timer=setInterval(autoplay, 3000);
 	function autoplay(){
     var num,i;
-     for (num=1;num<3;num++){
+     for (num=0;num<3;num++){
             	var opacity=($("#slider ul li").eq(num)).css("opacity");
             	if(opacity==0)
             		break;
@@ -120,7 +120,7 @@ var timer=setInterval(autoplay, 3000);
 
 
 
-/**	$('.round').click(function(){
+	$('.round').click(function(){
 		clearInterval(timer);
 
 var i;
@@ -144,15 +144,13 @@ var i;
             	($("#slider ul li").eq(i)).css("opacity","0");
             }
         	
-            //($("#slider ul li").eq(num)).css("opacity","1");
-          
-         // $('#slider ul').css('left', '');
+           
         });
      
-    
-	});**/
+     timer=setInterval(autoplay,3000);
+	});
 	
-// var timer2=setInterval(autoplay,3000);
+//
 });
 
 function setwidth(){
